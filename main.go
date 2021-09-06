@@ -60,17 +60,17 @@ func main() {
 	// }
 	// defer jsonFile.Close()
 
-	req, err := http.NewRequest("GET", "https://search.svc.ci.openshift.org/search", nil)
+	req, err := http.NewRequest("GET", "https://search.ci.openshift.org/search", nil)
 	if err != nil {
 		panic(err)
 	}
-	// https://search.svc.ci.openshift.org/search?search=%5C%5BFail%5C%5D&maxAge=336h&context=0&type=build-log&name=pull-ci-openshift-odo-master-&maxMatches=5&maxBytes=20971520
+	// https://search.ci.openshift.org/search?search=%5C%5BFail%5C%5D&maxAge=336h&context=0&type=build-log&name=pull-ci-openshift-odo-main-&maxMatches=5&maxBytes=20971520
 	q := req.URL.Query()
 	q.Add("search", "\\[Fail\\]")
 	q.Add("maxAge", "336h")
 	q.Add("context", "0")
 	q.Add("type", "build-log")
-	q.Add("name", "pull-ci-openshift-odo-master-")
+	q.Add("name", "pull-ci-openshift-odo-main-")
 	q.Add("maxMatches", "5")
 	q.Add("maxBytes", "20971520")
 	req.URL.RawQuery = q.Encode()
@@ -279,7 +279,7 @@ func main() {
 
 	fmt.Println("# odo test statistics")
 	fmt.Printf("Last update: %s (UTC)\n\n", time.Now().UTC().Format("2006-01-02 15:04:05"))
-	fmt.Println("Generated with https://github.com/jgwest/odo-tools/ and https://github.com/kadel/odo-tools")
+	fmt.Println("Generated with https://github.com/kadel/odo-tools")
 	fmt.Println("## FLAKY TESTS: Failed test scenarios in past 14 days")
 	fmt.Println("| Failure Score<sup>*</sup> | Failures | Test Name | Last Seen | PR List and Logs ")
 	fmt.Println("|---|---|---|---|---|")
