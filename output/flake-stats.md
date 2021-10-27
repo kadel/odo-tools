@@ -1,10 +1,12 @@
 # odo test statistics
-Last update: 2021-10-26 02:00:27 (UTC)
+Last update: 2021-10-27 02:00:20 (UTC)
 
 Generated with https://github.com/kadel/odo-tools
 ## FLAKY TESTS: Failed test scenarios in past 14 days
 | Failure Score<sup>*</sup> | Failures | Test Name | Last Seen | PR List and Logs 
 |---|---|---|---|---|
+| 80 | 4 | [ssh:Fedora-32-minikube] [Fail] odo link command tests for OperatorHub Operators are installed in the cluster when a component and a service are deployed [BeforeEach] when a link between the component and the service is created when odo push is executed should not list the service binding in `odo service list`  |  | 2: [#5172](https://github.com/openshift/odo/pull/5172)<sup>[1](https://storage.googleapis.com/origin-ci-test/pr-logs/pull/openshift_odo/5172/pull-ci-openshift-odo-main-psi-kubernetes-integration-e2e/1452934123243966464/build-log.txt)</sup> [#5107](https://github.com/openshift/odo/pull/5107)<sup>[1](https://storage.googleapis.com/origin-ci-test/pr-logs/pull/openshift_odo/5107/pull-ci-openshift-odo-main-psi-kubernetes-integration-e2e/1448169784410640384/build-log.txt), [2](https://storage.googleapis.com/origin-ci-test/pr-logs/pull/openshift_odo/5107/pull-ci-openshift-odo-main-psi-kubernetes-integration-e2e/1449305191928041472/build-log.txt), [3](https://storage.googleapis.com/origin-ci-test/pr-logs/pull/openshift_odo/5107/pull-ci-openshift-odo-main-psi-kubernetes-integration-e2e/1449291499140288512/build-log.txt)</sup> 
+| 40 | 2 | [ssh:Fedora-32-minikube] [Fail] odo link command tests for OperatorHub Operators are installed in the cluster when a component and a service are deployed [BeforeEach] when a link with between the component and the service is created with --bind-as-files when odo push is executed should find bindings for service  |  | 2: [#5172](https://github.com/openshift/odo/pull/5172)<sup>[1](https://storage.googleapis.com/origin-ci-test/pr-logs/pull/openshift_odo/5172/pull-ci-openshift-odo-main-psi-kubernetes-integration-e2e/1452895446857945088/build-log.txt)</sup> [#5107](https://github.com/openshift/odo/pull/5107)<sup>[1](https://storage.googleapis.com/origin-ci-test/pr-logs/pull/openshift_odo/5107/pull-ci-openshift-odo-main-psi-kubernetes-integration-e2e/1448169784410640384/build-log.txt)</sup> 
 
 
 <sup>*</sup> - Failure score is an arbitrary severity estimate, and is approximately `(# of PRs the test failure was seen in * # of test failures) / (days since failure)`. See code for full algorithm -- PRs welcome for algorithm improvements.
