@@ -1,5 +1,5 @@
 # odo test statistics
-Last update: 2023-07-16 02:48:09 (UTC)
+Last update: 2023-07-17 02:41:37 (UTC)
 
 Generated with https://github.com/kadel/odo-tools
 ## FLAKY TESTS: Failed test scenarios in past 14 days
